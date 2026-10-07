@@ -1,0 +1,36 @@
+name: Java Fundamentals CI
+
+on:
+  push:
+    paths:
+      - '01-java-fundamentals/**'
+      - '.github/workflows/java-fundamentals-ci.yml'
+  pull_request:
+    paths:
+      - '01-java-fundamentals/**'
+      - '.github/workflows/java-fundamentals-ci.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: 01-java-fundamentals
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java 25
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+          cache: maven
+
+      - name: Verify Java version
+        run: java -version
+
+      - name: Compile and test
+        run: mvn --batch-mode --no-transfer-progress clean test
