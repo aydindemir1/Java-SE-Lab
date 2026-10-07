@@ -1,6 +1,7 @@
 name: Java Fundamentals CI
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - '01-java-fundamentals/**'
