@@ -175,6 +175,7 @@ Diğer örnekler de aynı şekilde kendi fully-qualified class name'leri ile ça
 - [Pitfalls](docs/PITFALLS.md)
 - [Exercises](docs/EXERCISES.md)
 - [Interview & Reasoning](docs/INTERVIEW.md)
+- [Bytecode Observation Labs](docs/BYTECODE-LABS.md)
 
 ## Completion checklist
 
@@ -191,7 +192,23 @@ Diğer örnekler de aynı şekilde kendi fully-qualified class name'leri ile ça
 - [x] Arrays ve covariance edge-case'i eklendi
 - [x] String/Text Blocks kapsamı genişletildi
 - [x] Command-line arguments lab eklendi
-- [ ] Bytecode gözlem laboratuvarları eklenecek
+- [x] Bytecode gözlem laboratuvarları eklendi
 - [x] JUnit 5 otomatik testleri eklendi
 - [ ] Lokal build/runtime doğrulanacak
 - [ ] Final documentation review yapılacak
+
+
+## CI
+
+GitHub Actions, `01-java-fundamentals` altında değişiklik olduğunda Java 25 üzerinde:
+
+```bash
+mvn clean test
+```
+
+çalıştırır.
+
+Workflow:
+`.github/workflows/java-fundamentals-ci.yml`
+
+Bu nedenle proje yalnızca örnek kod içeren bir klasör değil; derlenebilir ve otomatik test edilen bağımsız bir Java SE eğitim projesidir.
