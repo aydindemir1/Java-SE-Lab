@@ -11,7 +11,7 @@ Durum anahtarları:
 
 | # | Project | Status |
 |---|---|---|
-| 01 | Java Fundamentals | ⬜ |
+| 01 | Java Fundamentals | 🟨 |
 | 02 | Object-Oriented Programming | ⬜ |
 | 03 | Exception Handling | ⬜ |
 | 04 | Generics | ⬜ |
