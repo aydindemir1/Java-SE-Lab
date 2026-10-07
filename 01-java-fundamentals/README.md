@@ -126,3 +126,64 @@ Language-level tercihlerin API correctness, maintainability, compatibility, allo
 - Bu projede Spring vb. framework yoktur.
 - Gerçek hayat örneği Java Fundamentals'ı görünür kılmalıdır.
 - İleri Java konuları yalnızca gerektiği kadar işaret edilir; ilgili ana projeye bırakılır.
+
+
+## Çalıştırma
+
+Gereksinim:
+- JDK 25
+- Maven 3.9+
+
+Derleme:
+
+```bash
+cd 01-java-fundamentals
+mvn clean compile
+```
+
+Bir örneği çalıştırma:
+
+```bash
+java -cp target/classes dev.aydindemir.javase.fundamentals.basics.HelloJava
+```
+
+Diğer örnekler de aynı şekilde kendi fully-qualified class name'leri ile çalıştırılabilir.
+
+## Şu anda bulunan örnekler
+
+- `basics/HelloJava`
+- `types/PrimitiveTypesDemo`
+- `types/ConversionAndOverflowDemo`
+- `controlflow/ModernSwitchDemo`
+- `methods/PassByValueDemo`
+- `arrays/ArrayBasicsDemo`
+- `strings/StringEqualityDemo`
+- `realworld/ShoppingCartPriceCalculator`
+- `realworld/ShippingDecisionEngine`
+
+## Eğitim dokümanları
+
+- [Theory](docs/THEORY.md)
+- [Pitfalls](docs/PITFALLS.md)
+- [Exercises](docs/EXERCISES.md)
+- [Interview & Reasoning](docs/INTERVIEW.md)
+
+## Completion checklist
+
+- [x] Maven Java 25 build tanımlandı
+- [x] Temel teori oluşturuldu
+- [x] İlk küçük örnekler eklendi
+- [x] İlk gerçek hayat örnekleri eklendi
+- [x] Pitfalls dokümanı eklendi
+- [x] Exercises eklendi
+- [x] Interview/reasoning soruları eklendi
+- [ ] Operators kapsamı tamamlanacak
+- [ ] Control-flow kapsamı tamamlanacak
+- [ ] Methods/varargs kapsamı tamamlanacak
+- [ ] Arrays kapsamı tamamlanacak
+- [ ] String/Text Blocks kapsamı tamamlanacak
+- [ ] Command-line arguments lab eklenecek
+- [ ] Bytecode gözlem laboratuvarları eklenecek
+- [ ] Otomatik testler eklenecek
+- [ ] Lokal build/runtime doğrulanacak
+- [ ] Final documentation review yapılacak
