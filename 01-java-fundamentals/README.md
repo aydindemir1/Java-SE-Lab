@@ -154,10 +154,18 @@ Diğer örnekler de aynı şekilde kendi fully-qualified class name'leri ile ça
 - `basics/HelloJava`
 - `types/PrimitiveTypesDemo`
 - `types/ConversionAndOverflowDemo`
+- `types/VarInferenceDemo`
+- `types/BoxingUnboxingDemo`
+- `operators/OperatorsAndExpressionsDemo`
 - `controlflow/ModernSwitchDemo`
+- `controlflow/LoopControlDemo`
 - `methods/PassByValueDemo`
+- `methods/VarargsDemo`
 - `arrays/ArrayBasicsDemo`
+- `arrays/ArrayCovariancePitfallDemo`
 - `strings/StringEqualityDemo`
+- `strings/TextBlockDemo`
+- `cli/CommandLineCalculator`
 - `realworld/ShoppingCartPriceCalculator`
 - `realworld/ShippingDecisionEngine`
 
@@ -177,13 +185,13 @@ Diğer örnekler de aynı şekilde kendi fully-qualified class name'leri ile ça
 - [x] Pitfalls dokümanı eklendi
 - [x] Exercises eklendi
 - [x] Interview/reasoning soruları eklendi
-- [ ] Operators kapsamı tamamlanacak
-- [ ] Control-flow kapsamı tamamlanacak
-- [ ] Methods/varargs kapsamı tamamlanacak
-- [ ] Arrays kapsamı tamamlanacak
-- [ ] String/Text Blocks kapsamı tamamlanacak
-- [ ] Command-line arguments lab eklenecek
+- [x] Operators kapsamı tamamlandı
+- [x] Control-flow kapsamı genişletildi
+- [x] Methods/varargs kapsamı genişletildi
+- [x] Arrays ve covariance edge-case'i eklendi
+- [x] String/Text Blocks kapsamı genişletildi
+- [x] Command-line arguments lab eklendi
 - [ ] Bytecode gözlem laboratuvarları eklenecek
-- [ ] Otomatik testler eklenecek
+- [x] JUnit 5 otomatik testleri eklendi
 - [ ] Lokal build/runtime doğrulanacak
 - [ ] Final documentation review yapılacak
