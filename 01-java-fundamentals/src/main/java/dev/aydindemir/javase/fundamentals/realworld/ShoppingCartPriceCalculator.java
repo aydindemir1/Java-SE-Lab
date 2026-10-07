@@ -2,8 +2,8 @@ package dev.aydindemir.javase.fundamentals.realworld;
 
 public final class ShoppingCartPriceCalculator {
 
-    private static final double FREE_SHIPPING_THRESHOLD = 1_500.0;
-    private static final double SHIPPING_FEE = 79.90;
+    static final double FREE_SHIPPING_THRESHOLD = 1_500.0;
+    static final double SHIPPING_FEE = 79.90;
 
     private ShoppingCartPriceCalculator() {
     }
@@ -25,14 +25,20 @@ public final class ShoppingCartPriceCalculator {
         System.out.printf("Total    : %.2f%n", total);
     }
 
-    private static double calculateDiscount(double subtotal, double rate) {
+    static double calculateDiscount(double subtotal, double rate) {
+        if (subtotal < 0.0) {
+            throw new IllegalArgumentException("Subtotal cannot be negative");
+        }
         if (rate < 0.0 || rate > 1.0) {
             throw new IllegalArgumentException("Discount rate must be between 0 and 1");
         }
         return subtotal * rate;
     }
 
-    private static double calculateShipping(double discountedTotal) {
+    static double calculateShipping(double discountedTotal) {
+        if (discountedTotal < 0.0) {
+            throw new IllegalArgumentException("Discounted total cannot be negative");
+        }
         return discountedTotal >= FREE_SHIPPING_THRESHOLD ? 0.0 : SHIPPING_FEE;
     }
 }
